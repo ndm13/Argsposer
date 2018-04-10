@@ -9,6 +9,12 @@ the easiest way to do that.  It's just a C# program that dumps its arguments
 "Open With...", checking formatting of interprocess data (rename it to
 whatever target you like!), and countless other uses.
 
+## Build Notes
+The only imports for the actual `cs` file are `System` and `System.Threading`,
+so there's no real reason this *has* to be a Windows Desktop project.  Feel
+free to export it as a .NET Core application or whatever you feel is
+appropriate.
+
 ## Example Usage
 ### Direct Invocation
 Great for inspecting the piped output of a program and checking how your
